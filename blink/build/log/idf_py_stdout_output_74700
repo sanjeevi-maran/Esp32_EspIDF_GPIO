@@ -1,0 +1,472 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar  6 2024 05:34:09[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a0ach ( 41132) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=0001a0d4 vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0001c330 vaddr=40080000 size=03ce8h ( 15592) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14a28h ( 84520) map[0m
+[0;32mI (161) esp_image: segment 4: paddr=00034a50 vaddr=40083ce8 size=08a34h ( 35380) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     blink[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (214) cpu_start: Compile time:     Mar  6 2024 05:34:03[0m
+[0;32mI (220) cpu_start: ELF file SHA256:  39cbc26a9...[0m
+[0;32mI (225) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (230) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (235) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (240) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (245) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (252) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (258) heap_init: At 3FFB2B20 len 0002D4E0 (181 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (270) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (277) heap_init: At 4008C71C len 000138E4 (78 KiB): IRAM[0m
+[0;32mI (284) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;33mW (292) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (305) main_task: Started on CPU0[0m
+[0;32mI (315) main_task: Calling app_main()[0m
+[0;32mI (315) MACHINE :: Example configured to blink GPIO LED![0m
+[0;32mI (315) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (325) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (335) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (345) gpio: GPIO[12]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (355) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (365) MACHINE:: Example configured to read switch state![0m
+[0;32mI (365) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (375) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6685) BUTTON:: Switch state: 0[0m
+[0;32mI (9085) BUTTON:: Switch state: 0[0m
+[0;32mI (9185) BUTTON:: Switch state: 0[0m
+[0;32mI (11085) BUTTON:: Switch state: 0[0m
+[0;32mI (11185) BUTTON:: Switch state: 0[0m
+[0;32mI (11285) BUTTON:: Switch state: 0[0m
+[0;32mI (11385) BUTTON:: Switch state: 0[0m
+[0;32mI (11485) BUTTON:: Switch state: 0[0m
+[0;32mI (11585) BUTTON:: Switch state: 0[0m
+[0;32mI (11685) BUTTON:: Switch state: 0[0m
+[0;32mI (11785) BUTTON:: Switch state: 0[0m
+[0;32mI (11885) BUTTON:: Switch state: 0[0m
+[0;32mI (13285) BUTTON:: Switch state: 0[0m
+[0;32mI (13385) BUTTON:: Switch state: 0[0m
+[0;32mI (13485) BUTTON:: Switch state: 0[0m
+[0;32mI (13585) BUTTON:: Switch state: 0[0m
+[0;32mI (13685) BUTTON:: Switch state: 0[0m
+[0;32mI (13785) BUTTON:: Switch state: 0[0m
+[0;32mI (13885) BUTTON:: Switch state: 0[0m
+[0;32mI (13985) BUTTON:: Switch state: 0[0m
+[0;32mI (16585) BUTTON:: Switch state: 0[0m
+[0;32mI (20385) BUTTON:: Switch state: 0[0m
+[0;32mI (22485) BUTTON:: Switch state: 0[0m
+[0;32mI (22585) BUTTON:: Switch state: 0[0m
+[0;32mI (22685) BUTTON:: Switch state: 0[0m
+[0;32mI (25385) BUTTON:: Switch state: 0[0m
+[0;32mI (25485) BUTTON:: Switch state: 0[0m
+[0;32mI (25585) BUTTON:: Switch state: 0[0m
+[0;32mI (25685) BUTTON:: Switch state: 0[0m
+[0;32mI (25785) BUTTON:: Switch state: 0[0m
+[0;32mI (25885) BUTTON:: Switch state: 0[0m
+[0;32mI (25985) BUTTON:: Switch state: 0[0m
+[0;32mI (26085) BUTTON:: Switch state: 0[0m
+[0;32mI (26185) BUTTON:: Switch state: 0[0m
+[0;32mI (26285) BUTTON:: Switch state: 0[0m
+[0;32mI (26385) BUTTON:: Switch state: 0[0m
+[0;32mI (26485) BUTTON:: Switch state: 0[0m
+[0;32mI (26585) BUTTON:: Switch state: 0[0m
+[0;32mI (26685) BUTTON:: Switch state: 0[0m
+[0;32mI (26785) BUTTON:: Switch state: 0[0m
+[0;32mI (26885) BUTTON:: Switch state: 0[0m
+[0;32mI (26985) BUTTON:: Switch state: 0[0m
+[0;32mI (27085) BUTTON:: Switch state: 0[0m
+[0;32mI (27185) BUTTON:: Switch state: 0[0m
+[0;32mI (27285) BUTTON:: Switch state: 0[0m
+[0;32mI (27385) BUTTON:: Switch state: 0[0m
+[0;32mI (27485) BUTTON:: Switch state: 0[0m
+[0;32mI (27585) BUTTON:: Switch state: 0[0m
+[0;32mI (27685) BUTTON:: Switch state: 0[0m
+[0;32mI (27785) BUTTON:: Switch state: 0[0m
+[0;32mI (27885) BUTTON:: Switch state: 0[0m
+[0;32mI (27985) BUTTON:: Switch state: 0[0m
+[0;32mI (28085) BUTTON:: Switch state: 0[0m
+[0;32mI (28185) BUTTON:: Switch state: 0[0m
+[0;32mI (28285) BUTTON:: Switch state: 0[0m
+[0;32mI (28385) BUTTON:: Switch state: 0[0m
+[0;32mI (28485) BUTTON:: Switch state: 0[0m
+[0;32mI (28585) BUTTON:: Switch state: 0[0m
+[0;32mI (28685) BUTTON:: Switch state: 0[0m
+[0;32mI (28785) BUTTON:: Switch state: 0[0m
+[0;32mI (28885) BUTTON:: Switch state: 0[0m
+[0;32mI (28985) BUTTON:: Switch state: 0[0m
+[0;32mI (29085) BUTTON:: Switch state: 0[0m
+[0;32mI (29185) BUTTON:: Switch state: 0[0m
+[0;32mI (29285) BUTTON:: Switch state: 0[0m
+[0;32mI (29385) BUTTON:: Switch state: 0[0m
+[0;32mI (29485) BUTTON:: Switch state: 0[0m
+[0;32mI (29585) BUTTON:: Switch state: 0[0m
+[0;32mI (29685) BUTTON:: Switch state: 0[0m
+[0;32mI (29785) BUTTON:: Switch state: 0[0m
+[0;32mI (29885) BUTTON:: Switch state: 0[0m
+[0;32mI (29985) BUTTON:: Switch state: 0[0m
+[0;32mI (30085) BUTTON:: Switch state: 0[0m
+[0;32mI (30185) BUTTON:: Switch state: 0[0m
+[0;32mI (30285) BUTTON:: Switch state: 0[0m
+[0;32mI (30385) BUTTON:: Switch state: 0[0m
+[0;32mI (30485) BUTTON:: Switch state: 0[0m
+[0;32mI (30585) BUTTON:: Switch state: 0[0m
+[0;32mI (30685) BUTTON:: Switch state: 0[0m
+[0;32mI (30785) BUTTON:: Switch state: 0[0m
+[0;32mI (30885) BUTTON:: Switch state: 0[0m
+[0;32mI (30985) BUTTON:: Switch state: 0[0m
+[0;32mI (31085) BUTTON:: Switch state: 0[0m
+[0;32mI (31185) BUTTON:: Switch state: 0[0m
+[0;32mI (31285) BUTTON:: Switch state: 0[0m
+[0;32mI (31385) BUTTON:: Switch state: 0[0m
+[0;32mI (31485) BUTTON:: Switch state: 0[0m
+[0;32mI (31585) BUTTON:: Switch state: 0[0m
+[0;32mI (31685) BUTTON:: Switch state: 0[0m
+[0;32mI (31785) BUTTON:: Switch state: 0[0m
+[0;32mI (31885) BUTTON:: Switch state: 0[0m
+[0;32mI (31985) BUTTON:: Switch state: 0[0m
+[0;32mI (32085) BUTTON:: Switch state: 0[0m
+[0;32mI (32185) BUTTON:: Switch state: 0[0m
+[0;32mI (32285) BUTTON:: Switch state: 0[0m
+[0;32mI (32385) BUTTON:: Switch state: 0[0m
+[0;32mI (37185) BUTTON:: Switch state: 0[0m
+[0;32mI (37985) BUTTON:: Switch state: 0[0m
+[0;32mI (38085) BUTTON:: Switch state: 0[0m
+[0;32mI (38185) BUTTON:: Switch state: 0[0m
+[0;32mI (38285) BUTTON:: Switch state: 0[0m
+[0;32mI (38385) BUTTON:: Switch state: 0[0m
+[0;32mI (38485) BUTTON:: Switch state: 0[0m
+[0;32mI (38585) BUTTON:: Switch state: 0[0m
+[0;32mI (38685) BUTTON:: Switch state: 0[0m
+[0;32mI (38785) BUTTON:: Switch state: 0[0m
+[0;32mI (38885) BUTTON:: Switch state: 0[0m
+[0;32mI (38985) BUTTON:: Switch state: 0[0m
+[0;32mI (39085) BUTTON:: Switch state: 0[0m
+[0;32mI (39185) BUTTON:: Switch state: 0[0m
+[0;32mI (39285) BUTTON:: Switch state: 0[0m
+[0;32mI (39385) BUTTON:: Switch state: 0[0m
+[0;32mI (39485) BUTTON:: Switch state: 0[0m
+[0;32mI (39585) BUTTON:: Switch state: 0[0m
+[0;32mI (39685) BUTTON:: Switch state: 0[0m
+[0;32mI (39785) BUTTON:: Switch state: 0[0m
+[0;32mI (39885) BUTTON:: Switch state: 0[0m
+[0;32mI (39985) BUTTON:: Switch state: 0[0m
+[0;32mI (40085) BUTTON:: Switch state: 0[0m
+[0;32mI (40185) BUTTON:: Switch state: 0[0m
+[0;32mI (40285) BUTTON:: Switch state: 0[0m
+[0;32mI (40385) BUTTON:: Switch state: 0[0m
+[0;32mI (40485) BUTTON:: Switch state: 0[0m
+[0;32mI (40585) BUTTON:: Switch state: 0[0m
+[0;32mI (40685) BUTTON:: Switch state: 0[0m
+[0;32mI (40785) BUTTON:: Switch state: 0[0m
+[0;32mI (40885) BUTTON:: Switch state: 0[0m
+[0;32mI (40985) BUTTON:: Switch state: 0[0m
+[0;32mI (41085) BUTTON:: Switch state: 0[0m
+[0;32mI (41185) BUTTON:: Switch state: 0[0m
+[0;32mI (41285) BUTTON:: Switch state: 0[0m
+[0;32mI (41385) BUTTON:: Switch state: 0[0m
+[0;32mI (41485) BUTTON:: Switch state: 0[0m
+[0;32mI (41585) BUTTON:: Switch state: 0[0m
+[0;32mI (41685) BUTTON:: Switch state: 0[0m
+[0;32mI (41785) BUTTON:: Switch state: 0[0m
+[0;32mI (41885) BUTTON:: Switch state: 0[0m
+[0;32mI (41985) BUTTON:: Switch state: 0[0m
+[0;32mI (42085) BUTTON:: Switch state: 0[0m
+[0;32mI (42185) BUTTON:: Switch state: 0[0m
+[0;32mI (42285) BUTTON:: Switch state: 0[0m
+[0;32mI (42385) BUTTON:: Switch state: 0[0m
+[0;32mI (42485) BUTTON:: Switch state: 0[0m
+[0;32mI (42585) BUTTON:: Switch state: 0[0m
+[0;32mI (42685) BUTTON:: Switch state: 0[0m
+[0;32mI (42785) BUTTON:: Switch state: 0[0m
+[0;32mI (42885) BUTTON:: Switch state: 0[0m
+[0;32mI (42985) BUTTON:: Switch state: 0[0m
+[0;32mI (43085) BUTTON:: Switch state: 0[0m
+[0;32mI (43185) BUTTON:: Switch state: 0[0m
+[0;32mI (43285) BUTTON:: Switch state: 0[0m
+[0;32mI (43385) BUTTON:: Switch state: 0[0m
+[0;32mI (43485) BUTTON:: Switch state: 0[0m
+[0;32mI (43585) BUTTON:: Switch state: 0[0m
+[0;32mI (43685) BUTTON:: Switch state: 0[0m
+[0;32mI (43785) BUTTON:: Switch state: 0[0m
+[0;32mI (43885) BUTTON:: Switch state: 0[0m
+[0;32mI (43985) BUTTON:: Switch state: 0[0m
+[0;32mI (44085) BUTTON:: Switch state: 0[0m
+[0;32mI (44185) BUTTON:: Switch state: 0[0m
+[0;32mI (44285) BUTTON:: Switch state: 0[0m
+[0;32mI (44385) BUTTON:: Switch state: 0[0m
+[0;32mI (44485) BUTTON:: Switch state: 0[0m
+[0;32mI (44585) BUTTON:: Switch state: 0[0m
+[0;32mI (44685) BUTTON:: Switch state: 0[0m
+[0;32mI (44785) BUTTON:: Switch state: 0[0m
+[0;32mI (44885) BUTTON:: Switch state: 0[0m
+[0;32mI (44985) BUTTON:: Switch state: 0[0m
+[0;32mI (45085) BUTTON:: Switch state: 0[0m
+[0;32mI (45185) BUTTON:: Switch state: 0[0m
+[0;32mI (45285) BUTTON:: Switch state: 0[0m
+[0;32mI (45385) BUTTON:: Switch state: 0[0m
+[0;32mI (45485) BUTTON:: Switch state: 0[0m
+[0;32mI (63185) BUTTON:: Switch state: 0[0m
+[0;32mI (65985) BUTTON:: Switch state: 0[0m
+[0;32mI (66685) BUTTON:: Switch state: 0[0m
+[0;32mI (66785) BUTTON:: Switch state: 0[0m
+[0;32mI (66885) BUTTON:: Switch state: 0[0m
+[0;32mI (67685) BUTTON:: Switch state: 0[0m
+[0;32mI (67785) BUTTON:: Switch state: 0[0m
+[0;32mI (67885) BUTTON:: Switch state: 0[0m
+[0;32mI (68685) BUTTON:: Switch state: 0[0m
+[0;32mI (68785) BUTTON:: Switch state: 0[0m
+[0;32mI (69785) BUTTON:: Switch state: 0[0m
+[0;32mI (70485) BUTTON:: Switch state: 0[0m
+[0;32mI (71185) BUTTON:: Switch state: 0[0m
+[0;32mI (71285) BUTTON:: Switch state: 0[0m
+[0;32mI (79085) BUTTON:: Switch state: 0[0m
+[0;32mI (85085) BUTTON:: Switch state: 0[0m
+[0;32mI (85185) BUTTON:: Switch state: 0[0m
+[0;32mI (85885) BUTTON:: Switch state: 0[0m
+[0;32mI (85985) BUTTON:: Switch state: 0[0m
+[0;32mI (87285) BUTTON:: Switch state: 0[0m
+[0;32mI (87385) BUTTON:: Switch state: 0[0m
+[0;32mI (87985) BUTTON:: Switch state: 0[0m
+[0;32mI (88085) BUTTON:: Switch state: 0[0m
+[0;32mI (88785) BUTTON:: Switch state: 0[0m
+[0;32mI (89485) BUTTON:: Switch state: 0[0m
+[0;32mI (92285) BUTTON:: Switch state: 0[0m
+[0;32mI (92985) BUTTON:: Switch state: 0[0m
+[0;32mI (93685) BUTTON:: Switch state: 0[0m
+[0;32mI (93785) BUTTON:: Switch state: 0[0m
+[0;32mI (94785) BUTTON:: Switch state: 0[0m
+[0;32mI (94885) BUTTON:: Switch state: 0[0m
+[0;32mI (95485) BUTTON:: Switch state: 0[0m
+[0;32mI (95585) BUTTON:: Switch state: 0[0m
+[0;32mI (95685) BUTTON:: Switch state: 0[0m
+[0;32mI (96385) BUTTON:: Switch state: 0[0m
+[0;32mI (96485) BUTTON:: Switch state: 0[0m
+[0;32mI (96985) BUTTON:: Switch state: 0[0m
+[0;32mI (97085) BUTTON:: Switch state: 0[0m
+[0;32mI (97585) BUTTON:: Switch state: 0[0m
+[0;32mI (97685) BUTTON:: Switch state: 0[0m
+[0;32mI (98285) BUTTON:: Switch state: 0[0m
+[0;32mI (98385) BUTTON:: Switch state: 0[0m
+[0;32mI (98785) BUTTON:: Switch state: 0[0m
+[0;32mI (99185) BUTTON:: Switch state: 0[0m
+[0;32mI (99285) BUTTON:: Switch state: 0[0m
+[0;32mI (108685) BUTTON:: Switch state: 0[0m
+[0;32mI (108785) BUTTON:: Switch state: 0[0m
+[0;32mI (108885) BUTTON:: Switch state: 0[0m
+[0;32mI (108985) BUTTON:: Switch state: 0[0m
+[0;32mI (109085) BUTTON:: Switch state: 0[0m
+[0;32mI (109185) BUTTON:: Switch state: 0[0m
+[0;32mI (109285) BUTTON:: Switch state: 0[0m
+[0;32mI (109385) BUTTON:: Switch state: 0[0m
+[0;32mI (109485) BUTTON:: Switch state: 0[0m
+[0;32mI (109585) BUTTON:: Switch state: 0[0m
+[0;32mI (109685) BUTTON:: Switch state: 0[0m
+[0;32mI (109785) BUTTON:: Switch state: 0[0m
+[0;32mI (109885) BUTTON:: Switch state: 0[0m
+[0;32mI (109985) BUTTON:: Switch state: 0[0m
+[0;32mI (110085) BUTTON:: Switch state: 0[0m
+[0;32mI (110185) BUTTON:: Switch state: 0[0m
+[0;32mI (110285) BUTTON:: Switch state: 0[0m
+[0;32mI (110385) BUTTON:: Switch state: 0[0m
+[0;32mI (110485) BUTTON:: Switch state: 0[0m
+[0;32mI (110585) BUTTON:: Switch state: 0[0m
+[0;32mI (110685) BUTTON:: Switch state: 0[0m
+[0;32mI (110785) BUTTON:: Switch state: 0[0m
+[0;32mI (110885) BUTTON:: Switch state: 0[0m
+[0;32mI (110985) BUTTON:: Switch state: 0[0m
+[0;32mI (111085) BUTTON:: Switch state: 0[0m
+[0;32mI (111185) BUTTON:: Switch state: 0[0m
+[0;32mI (111285) BUTTON:: Switch state: 0[0m
+[0;32mI (111385) BUTTON:: Switch state: 0[0m
+[0;32mI (111485) BUTTON:: Switch state: 0[0m
+[0;32mI (111585) BUTTON:: Switch state: 0[0m
+[0;32mI (111685) BUTTON:: Switch state: 0[0m
+[0;32mI (111785) BUTTON:: Switch state: 0[0m
+[0;32mI (111885) BUTTON:: Switch state: 0[0m
+[0;32mI (111985) BUTTON:: Switch state: 0[0m
+[0;32mI (112085) BUTTON:: Switch state: 0[0m
+[0;32mI (112185) BUTTON:: Switch state: 0[0m
+[0;32mI (112285) BUTTON:: Switch state: 0[0m
+[0;32mI (112385) BUTTON:: Switch state: 0[0m
+[0;32mI (112485) BUTTON:: Switch state: 0[0m
+[0;32mI (112585) BUTTON:: Switch state: 0[0m
+[0;32mI (112685) BUTTON:: Switch state: 0[0m
+[0;32mI (112785) BUTTON:: Switch state: 0[0m
+[0;32mI (112885) BUTTON:: Switch state: 0[0m
+[0;32mI (112985) BUTTON:: Switch state: 0[0m
+[0;32mI (113085) BUTTON:: Switch state: 0[0m
+[0;32mI (113185) BUTTON:: Switch state: 0[0m
+[0;32mI (113285) BUTTON:: Switch state: 0[0m
+[0;32mI (113385) BUTTON:: Switch state: 0[0m
+[0;32mI (113485) BUTTON:: Switch state: 0[0m
+[0;32mI (113585) BUTTON:: Switch state: 0[0m
+[0;32mI (113685) BUTTON:: Switch state: 0[0m
+[0;32mI (113785) BUTTON:: Switch state: 0[0m
+[0;32mI (113885) BUTTON:: Switch state: 0[0m
+[0;32mI (113985) BUTTON:: Switch state: 0[0m
+[0;32mI (114085) BUTTON:: Switch state: 0[0m
+[0;32mI (114185) BUTTON:: Switch state: 0[0m
+[0;32mI (114285) BUTTON:: Switch state: 0[0m
+[0;32mI (114385) BUTTON:: Switch state: 0[0m
+[0;32mI (114485) BUTTON:: Switch state: 0[0m
+[0;32mI (114585) BUTTON:: Switch state: 0[0m
+[0;32mI (114685) BUTTON:: Switch state: 0[0m
+[0;32mI (114785) BUTTON:: Switch state: 0[0m
+[0;32mI (114885) BUTTON:: Switch state: 0[0m
+[0;32mI (114985) BUTTON:: Switch state: 0[0m
+[0;32mI (115085) BUTTON:: Switch state: 0[0m
+[0;32mI (115185) BUTTON:: Switch state: 0[0m
+[0;32mI (115285) BUTTON:: Switch state: 0[0m
+[0;32mI (115385) BUTTON:: Switch state: 0[0m
+[0;32mI (115485) BUTTON:: Switch state: 0[0m
+[0;32mI (115585) BUTTON:: Switch state: 0[0m
+[0;32mI (115685) BUTTON:: Switch state: 0[0m
+[0;32mI (115785) BUTTON:: Switch state: 0[0m
+[0;32mI (115885) BUTTON:: Switch state: 0[0m
+[0;32mI (115985) BUTTON:: Switch state: 0[0m
+[0;32mI (116085) BUTTON:: Switch state: 0[0m
+[0;32mI (116185) BUTTON:: Switch state: 0[0m
+[0;32mI (116285) BUTTON:: Switch state: 0[0m
+[0;32mI (116385) BUTTON:: Switch state: 0[0m
+[0;32mI (116485) BUTTON:: Switch state: 0[0m
+[0;32mI (116585) BUTTON:: Switch state: 0[0m
+[0;32mI (116685) BUTTON:: Switch state: 0[0m
+[0;32mI (116785) BUTTON:: Switch state: 0[0m
+[0;32mI (116885) BUTTON:: Switch state: 0[0m
+[0;32mI (116985) BUTTON:: Switch state: 0[0m
+[0;32mI (117085) BUTTON:: Switch state: 0[0m
+[0;32mI (117185) BUTTON:: Switch state: 0[0m
+[0;32mI (117285) BUTTON:: Switch state: 0[0m
+[0;32mI (117385) BUTTON:: Switch state: 0[0m
+[0;32mI (117485) BUTTON:: Switch state: 0[0m
+[0;32mI (117585) BUTTON:: Switch state: 0[0m
+[0;32mI (117685) BUTTON:: Switch state: 0[0m
+[0;32mI (117785) BUTTON:: Switch state: 0[0m
+[0;32mI (117885) BUTTON:: Switch state: 0[0m
+[0;32mI (117985) BUTTON:: Switch state: 0[0m
+[0;32mI (118085) BUTTON:: Switch state: 0[0m
+[0;32mI (118185) BUTTON:: Switch state: 0[0m
+[0;32mI (118285) BUTTON:: Switch state: 0[0m
+[0;32mI (118385) BUTTON:: Switch state: 0[0m
+[0;32mI (118485) BUTTON:: Switch state: 0[0m
+[0;32mI (118585) BUTTON:: Switch state: 0[0m
+[0;32mI (118685) BUTTON:: Switch state: 0[0m
+[0;32mI (118785) BUTTON:: Switch state: 0[0m
+[0;32mI (118885) BUTTON:: Switch state: 0[0m
+[0;32mI (118985) BUTTON:: Switch state: 0[0m
+[0;32mI (119085) BUTTON:: Switch state: 0[0m
+[0;32mI (119185) BUTTON:: Switch state: 0[0m
+[0;32mI (119285) BUTTON:: Switch state: 0[0m
+[0;32mI (119385) BUTTON:: Switch state: 0[0m
+[0;32mI (119485) BUTTON:: Switch state: 0[0m
+[0;32mI (119585) BUTTON:: Switch state: 0[0m
+[0;32mI (119685) BUTTON:: Switch state: 0[0m
+[0;32mI (119785) BUTTON:: Switch state: 0[0m
+[0;32mI (119885) BUTTON:: Switch state: 0[0m
+[0;32mI (119985) BUTTON:: Switch state: 0[0m
+[0;32mI (120085) BUTTON:: Switch state: 0[0m
+[0;32mI (120185) BUTTON:: Switch state: 0[0m
+[0;32mI (120285) BUTTON:: Switch state: 0[0m
+[0;32mI (120385) BUTTON:: Switch state: 0[0m
+[0;32mI (120485) BUTTON:: Switch state: 0[0m
+[0;32mI (120585) BUTTON:: Switch state: 0[0m
+[0;32mI (120685) BUTTON:: Switch state: 0[0m
+[0;32mI (120785) BUTTON:: Switch state: 0[0m
+[0;32mI (120885) BUTTON:: Switch state: 0[0m
+[0;32mI (120985) BUTTON:: Switch state: 0[0m
+[0;32mI (121085) BUTTON:: Switch state: 0[0m
+[0;32mI (121185) BUTTON:: Switch state: 0[0m
+[0;32mI (121285) BUTTON:: Switch state: 0[0m
+[0;32mI (121385) BUTTON:: Switch state: 0[0m
+[0;32mI (121485) BUTTON:: Switch state: 0[0m
+[0;32mI (121585) BUTTON:: Switch state: 0[0m
+[0;32mI (121685) BUTTON:: Switch state: 0[0m
+[0;32mI (121785) BUTTON:: Switch state: 0[0m
+[0;32mI (121885) BUTTON:: Switch state: 0[0m
+[0;32mI (121985) BUTTON:: Switch state: 0[0m
+[0;32mI (122085) BUTTON:: Switch state: 0[0m
+[0;32mI (122185) BUTTON:: Switch state: 0[0m
+[0;32mI (122285) BUTTON:: Switch state: 0[0m
+[0;32mI (126785) BUTTON:: Switch state: 0[0m
+[0;32mI (126885) BUTTON:: Switch state: 0[0m
+[0;32mI (126985) BUTTON:: Switch state: 0[0m
+[0;32mI (127085) BUTTON:: Switch state: 0[0m
+[0;32mI (127185) BUTTON:: Switch state: 0[0m
+[0;32mI (127285) BUTTON:: Switch state: 0[0m
+[0;32mI (127385) BUTTON:: Switch state: 0[0m
+[0;32mI (127485) BUTTON:: Switch state: 0[0m
+[0;32mI (127585) BUTTON:: Switch state: 0[0m
+[0;32mI (127685) BUTTON:: Switch state: 0[0m
+[0;32mI (127785) BUTTON:: Switch state: 0[0m
+[0;32mI (127885) BUTTON:: Switch state: 0[0m
+[0;32mI (127985) BUTTON:: Switch state: 0[0m
+[0;32mI (128085) BUTTON:: Switch state: 0[0m
+[0;32mI (128185) BUTTON:: Switch state: 0[0m
+[0;32mI (128285) BUTTON:: Switch state: 0[0m
+[0;32mI (128385) BUTTON:: Switch state: 0[0m
+[0;32mI (128485) BUTTON:: Switch state: 0[0m
+[0;32mI (128585) BUTTON:: Switch state: 0[0m
+[0;32mI (128685) BUTTON:: Switch state: 0[0m
+[0;32mI (128785) BUTTON:: Switch state: 0[0m
+[0;32mI (128885) BUTTON:: Switch state: 0[0m
+[0;32mI (128985) BUTTON:: Switch state: 0[0m
+[0;32mI (129085) BUTTON:: Switch state: 0[0m
+[0;32mI (129185) BUTTON:: Switch state: 0[0m
+[0;32mI (129285) BUTTON:: Switch state: 0[0m
+[0;32mI (129385) BUTTON:: Switch state: 0[0m
+[0;32mI (129485) BUTTON:: Switch state: 0[0m
+[0;32mI (129585) BUTTON:: Switch state: 0[0m
+[0;32mI (129685) BUTTON:: Switch state: 0[0m
+[0;32mI (129785) BUTTON:: Switch state: 0[0m
+[0;32mI (129885) BUTTON:: Switch state: 0[0m
+[0;32mI (129985) BUTTON:: Switch state: 0[0m
+[0;32mI (130085) BUTTON:: Switch state: 0[0m
+[0;32mI (130185) BUTTON:: Switch state: 0[0m
+[0;32mI (159785) BUTTON:: Switch state: 0[0m
+[0;32mI (159985) BUTTON:: Switch state: 0[0m
+[0;32mI (160885) BUTTON:: Switch state: 0[0m
+[0;32mI (160985) BUTTON:: Switch state: 0[0m
+[0;32mI (161785) BUTTON:: Switch state: 0[0m
+[0;32mI (162285) BUTTON:: Switch state: 0[0m
+[0;32mI (162385) BUTTON:: Switch state: 0[0m
+[0;32mI (163185) BUTTON:: Switch state: 0[0m
+[0;32mI (163685) BUTTON:: Switch state: 0[0m
+[0;32mI (163785) BUTTON:: Switch state: 0[0m
+[0;32mI (164285) BUTTON:: Switch state: 0[0m
+[0;32mI (164385) BUTTON:: Switch state: 0[0m
+[0;32mI (165085) BUTTON:: Switch state: 0[0m
+[0;32mI (165585) BUTTON:: Switch state: 0[0m
+[0;32mI (165685) BUTTON:: Switch state: 0[0m
+[0;32mI (166185) BUTTON:: Switch state: 0[0m
+[0;32mI (166285) BUTTON:: Switch state: 0[0m

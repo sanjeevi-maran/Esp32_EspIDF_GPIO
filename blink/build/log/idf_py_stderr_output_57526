@@ -1,0 +1,65 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d7e0f: task_wdt_timeout_handling at /home/sjv/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400d81d4: task_wdt_isr at /home/sjv/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40082f51: _xt_lowint1 at /home/sjv/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d6759: gpio_ll_get_level at /home/sjv/esp/esp-idf/components/hal/esp32/include/hal/gpio_ll.h:516
+ (inlined by) gpio_get_level at /home/sjv/esp/esp-idf/components/driver/gpio/gpio.c:245
+0x400d53df: app_main at /home/sjv/esp/blink/main/blink_example_main.c:39
+0x400e4008: main_task at /home/sjv/esp/esp-idf/components/freertos/app_startup.c:208
+0x40086021: vPortTaskWrapper at /home/sjv/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d7e0f: task_wdt_timeout_handling at /home/sjv/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400d81d4: task_wdt_isr at /home/sjv/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40082f51: _xt_lowint1 at /home/sjv/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d672c: gpio_ll_get_level at /home/sjv/esp/esp-idf/components/hal/esp32/include/hal/gpio_ll.h:513
+ (inlined by) gpio_get_level at /home/sjv/esp/esp-idf/components/driver/gpio/gpio.c:245
+0x400d53df: app_main at /home/sjv/esp/blink/main/blink_example_main.c:39
+0x400e4008: main_task at /home/sjv/esp/esp-idf/components/freertos/app_startup.c:208
+0x40086021: vPortTaskWrapper at /home/sjv/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d7e0f: task_wdt_timeout_handling at /home/sjv/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400d81d4: task_wdt_isr at /home/sjv/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40082f51: _xt_lowint1 at /home/sjv/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d53da: app_main at /home/sjv/esp/blink/main/blink_example_main.c:36
+0x400e4008: main_task at /home/sjv/esp/esp-idf/components/freertos/app_startup.c:208
+0x40086021: vPortTaskWrapper at /home/sjv/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d7e0f: task_wdt_timeout_handling at /home/sjv/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400d81d4: task_wdt_isr at /home/sjv/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40082f51: _xt_lowint1 at /home/sjv/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d53da: app_main at /home/sjv/esp/blink/main/blink_example_main.c:36
+0x400e4008: main_task at /home/sjv/esp/esp-idf/components/freertos/app_startup.c:208
+0x40086021: vPortTaskWrapper at /home/sjv/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d7e0f: task_wdt_timeout_handling at /home/sjv/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400d81d4: task_wdt_isr at /home/sjv/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40082f51: _xt_lowint1 at /home/sjv/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d53da: app_main at /home/sjv/esp/blink/main/blink_example_main.c:36
+0x400e4008: main_task at /home/sjv/esp/esp-idf/components/freertos/app_startup.c:208
+0x40086021: vPortTaskWrapper at /home/sjv/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d7e0f: task_wdt_timeout_handling at /home/sjv/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400d81d4: task_wdt_isr at /home/sjv/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40082f51: _xt_lowint1 at /home/sjv/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d53da: app_main at /home/sjv/esp/blink/main/blink_example_main.c:36
+0x400e4008: main_task at /home/sjv/esp/esp-idf/components/freertos/app_startup.c:208
+0x40086021: vPortTaskWrapper at /home/sjv/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d7e0f: task_wdt_timeout_handling at /home/sjv/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400d81d4: task_wdt_isr at /home/sjv/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40082f51: _xt_lowint1 at /home/sjv/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d53da: app_main at /home/sjv/esp/blink/main/blink_example_main.c:36
+0x400e4008: main_task at /home/sjv/esp/esp-idf/components/freertos/app_startup.c:208
+0x40086021: vPortTaskWrapper at /home/sjv/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d7e0f: task_wdt_timeout_handling at /home/sjv/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400d81d4: task_wdt_isr at /home/sjv/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40082f51: _xt_lowint1 at /home/sjv/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d53da: app_main at /home/sjv/esp/blink/main/blink_example_main.c:36
+0x400e4008: main_task at /home/sjv/esp/esp-idf/components/freertos/app_startup.c:208
+0x40086021: vPortTaskWrapper at /home/sjv/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0m

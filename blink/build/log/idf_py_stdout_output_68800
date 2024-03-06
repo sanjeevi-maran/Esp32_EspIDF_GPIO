@@ -1,0 +1,42 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/sjv/esp/blink/build/bootloader/esp-idf/esptool_py && /home/sjv/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/sjv/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/sjv/esp/blink/build/bootloader/bootloader.bin
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/blink_example_main.c.obj
+/home/sjv/esp/blink/main/blink_example_main.c: In function 'machine_function':
+/home/sjv/esp/blink/main/blink_example_main.c:110:29: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  110 |                             gpio_set_level(BOOST_LED, 0);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/sjv/esp/blink/main/blink_example_main.c:111:25: note: here
+  111 |                         case 2:
+      |                         ^~~~
+/home/sjv/esp/blink/main/blink_example_main.c:115:29: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  115 |                             gpio_set_level(BOOST_LED, 0);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/sjv/esp/blink/main/blink_example_main.c:116:25: note: here
+  116 |                         case 3:
+      |                         ^~~~
+/home/sjv/esp/blink/main/blink_example_main.c:120:29: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  120 |                             gpio_set_level(BOOST_LED, 0);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/sjv/esp/blink/main/blink_example_main.c:121:25: note: here
+  121 |                         case 4:
+      |                         ^~~~
+/home/sjv/esp/blink/main/blink_example_main.c:125:29: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  125 |                             gpio_set_level(BOOST_LED, 1);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/sjv/esp/blink/main/blink_example_main.c:126:25: note: here
+  126 |                         case 5:
+      |                         ^~~~
+[5/9] Linking C static library esp-idf/main/libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable blink.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/sjv/esp/blink/build/blink.bin
+[9/9] cd /home/sjv/esp/blink/build/esp-idf/esptool_py && /home/sjv/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/sjv/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/sjv/esp/blink/build/partition_table/partition-table.bin /home/sjv/esp/blink/build/blink.bin
+blink.bin binary size 0x2d410 bytes. Smallest app partition is 0x100000 bytes. 0xd2bf0 bytes (82%) free.

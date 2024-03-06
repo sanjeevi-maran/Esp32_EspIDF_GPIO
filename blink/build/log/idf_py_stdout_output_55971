@@ -1,0 +1,130 @@
+j%�(9326) MACHINE �ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar  6 2024 05:34:09[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09fcch ( 40908) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=00019ff4 vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001c250 vaddr=40080000 size=03dc8h ( 15816) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14758h ( 83800) map[0m
+[0;32mI (161) esp_image: segment 4: paddr=00034780 vaddr=40083dc8 size=08954h ( 35156) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     blink[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (214) cpu_start: Compile time:     Mar  6 2024 05:34:03[0m
+[0;32mI (220) cpu_start: ELF file SHA256:  147e14bf0...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (230) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (235) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (240) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (245) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (252) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (258) heap_init: At 3FFB2B18 len 0002D4E8 (181 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (271) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (277) heap_init: At 4008C71C len 000138E4 (78 KiB): IRAM[0m
+[0;32mI (285) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;33mW (292) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (316) main_task: Calling app_main()[0m
+[0;32mI (316) MACHINE :: Example configured to blink GPIO LED![0m
+[0;32mI (316) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) MACHINE :: LED ON[0m
+[0;32mI (1326) MACHINE :: LED OFF[0m
+[0;32mI (2326) MACHINE :: LED ON[0m
+[0;32mI (3326) MACHINE :: LED OFF[0m
+[0;32mI (4326) MACHINE :: LED ON[0m
+[0;32mI (5326) MACHINE :: LED OFF[0m
+[0;32mI (6326) MACHINE :: LED ON[0m
+[0;32mI (7326) MACHINE :: LED OFF[0m
+[0;32mI (8326) MACHINE :: LED ON[0m
+[0;32mI (9326) MACHINE :: LED OFF[0m
+[0;32mI (10326) MACHINE :: LED ON[0m
+[0;32mI (11326) MACHINE :: LED OFF[0m
+[0;32mI (12326) MACHINE :: LED ON[0m
+[0;32mI (13326) MACHINE :: LED OFF[0m
+[0;32mI (14326) MACHINE :: LED ON[0m
+[0;32mI (15326) MACHINE :: LED OFF[0m
+[0;32mI (16326) MACHINE :: LED ON[0m
+[0;32mI (17326) MACHINE :: LED OFF[0m
+[0;32mI (18326) MACHINE :: LED ON[0m
+[0;32mI (19326) MACHINE :: LED OFF[0m
+[0;32mI (20326) MACHINE :: LED ON[0m
+[0;32mI (21326) MACHINE :: LED OFF[0m
+[0;32mI (22326) MACHINE :: LED ON[0m
+[0;32mI (23326) MACHINE :: LED OFF[0m
+[0;32mI (24326) MACHINE :: LED ON[0m
+[0;32mI (25326) MACHINE :: LED OFF[0m
+[0;32mI (26326) MACHINE :: LED ON[0m
+[0;32mI (27326) MACHINE :: LED OFF[0m
+[0;32mI (28326) MACHINE :: LED ON[0m
+[0;32mI (29326) MACHINE :: LED OFF[0m
+[0;32mI (30326) MACHINE :: LED ON[0m
+[0;32mI (31326) MACHINE :: LED OFF[0m
+[0;32mI (32326) MACHINE :: LED ON[0m
+[0;32mI (33326) MACHINE :: LED OFF[0m
+[0;32mI (34326) MACHINE :: LED ON[0m
+[0;32mI (35326) MACHINE :: LED OFF[0m
+[0;32mI (36326) MACHINE :: LED ON[0m
+[0;32mI (37326) MACHINE :: LED OFF[0m
+[0;32mI (38326) MACHINE :: LED ON[0m
+[0;32mI (39326) MACHINE :: LED OFF[0m
+[0;32mI (40326) MACHINE :: LED ON[0m
+[0;32mI (41326) MACHINE :: LED OFF[0m
+[0;32mI (42326) MACHINE :: LED ON[0m
+[0;32mI (43326) MACHINE :: LED OFF[0m
+[0;32mI (44326) MACHINE :: LED ON[0m
+[0;32mI (45326) MACHINE :: LED OFF[0m
+[0;32mI (46326) MACHINE :: LED ON[0m
+[0;32mI (47326) MACHINE :: LED OFF[0m
+[0;32mI (48326) MACHINE :: LED ON[0m
+[0;32mI (49326) MACHINE :: LED OFF[0m
+[0;32mI (50326) MACHINE :: LED ON[0m
+[0;32mI (51326) MACHINE :: LED OFF[0m
+[0;32mI (52326) MACHINE :: LED ON[0m
+[0;32mI (53326) MACHINE :: LED OFF[0m
+[0;32mI (54326) MACHINE :: LED ON[0m
+[0;32mI (55326) MACHINE :: LED OFF[0m
+[0;32mI (56326) MACHINE :: LED ON[0m
+[0;32mI (57326) MACHINE :: LED OFF[0m
+[0;32mI (58326) MACHINE :: LED ON[0m
+[0;32mI (59326) MACHINE :: LED OFF[0m
+[0;32mI (60326) MACHINE :: LED ON[0m
+[0;32mI (1326) MACHINE :: LED OFF[0m
+[0;32mI (2326) MACHINE :: LED ON[0m
+[0;32mI (3326) MACHINE :: LED OFF[0m
+[0;32mI (4326) MACHINE :: LED ON[0m
+[0;32mI (5326) MACHINE :: LED OFF[0m
+[0;32mI (6326) MACHINE :: LED ON[0m
+[0;32mI (7326) MACHINE :: LED OFF[0m
+[0;32mI (8326) MACHINE :: LED ON[0m
+[0;32mI (9326) MACHINE :: LED OFF[0m
+[0;32mI (10326) MACHINE :: LED ON[0m
+[0;32mI (11326) MACHINE :: LED OFF[0m
